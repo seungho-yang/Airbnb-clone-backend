@@ -20,22 +20,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-class Human:
-    def __init__(self, name):
-        self.name = name
-    def say_hello(self):
-        print(f"hello my name is {self.name}")
-    
-
-class Player(Human):
-    def __init__(self, name, xp):
-        super().__init__(name)
-        self.xp = xp
-
-
-class Fan(Human):
-    def __init__(self, name, fav_team):
-        super().__init__(name)
-        self.fav_team = fav_team
