@@ -3,9 +3,15 @@ from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
 from rest_framework.status import HTTP_204_NO_CONTENT
 from rest_framework.views import APIView
+from rest_framework.viesets import ModelViesSet
 from .models import Category
 from .serializers import CategorySerializer
+from categories import serializers
 
+
+class CategoryViewSet(ModelViesSet):
+    serializer_class = CategorySerializer
+    quetyset = Category.objects.all()
 
 class categories(APIView):
     def get(self, request):
