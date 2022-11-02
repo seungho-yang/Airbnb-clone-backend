@@ -10,3 +10,5 @@ class CategoryAdmin(admin.ModelAdmin):
         "kind",
     )
     list_filter = ("kind",)
+    
+    
