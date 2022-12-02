@@ -21,4 +21,3 @@ class Category(CommonModel):
 
     class Meta:
         verbose_name_plural = "Categories" 
-

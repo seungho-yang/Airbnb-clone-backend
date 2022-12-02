@@ -8,7 +8,6 @@ urlpatterns = [
 
 ]
 
-
 urlpatterns = [
     path('', 
         views.CategoryViewSet.as_view(
