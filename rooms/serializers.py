@@ -22,7 +22,7 @@ class RoomDetailSerializer(ModelSerializer):
     category = CategorySerializer(
         read_only = True,
     )
-
+    
     class Meta:
         model = Room
         
