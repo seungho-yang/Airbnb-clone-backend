@@ -25,3 +25,17 @@ class RoomDetailSerializer(ModelSerializer):
 
     class Meta:
         model = Room
+        
+
+class RoomListSerializer(ModelSerializer):
+    class Meta:
+        #modal = Amenity
+        #fields = "__all__"
+        model = Room
+        fields = (
+            "pk",
+            "name",
+            "country",
+            "city",
+            "price",
+        )

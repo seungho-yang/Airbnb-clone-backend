@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 THIRD_PARTY_APPS = [
@@ -38,6 +37,9 @@ CUSTOM_APPS = [
     'houses.apps.HousesConfig',
     'users.apps.UsersConfig',
     "categories.apps.CategoriesConfig",
+    "rooms.apps.RoomsConfig",
+    "common.apps.CommonConfig",
+    "experiences.apps.ExperiencesConfig",
 ]
 
 SYSTEM_APPS = [
@@ -81,7 +83,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -91,7 +92,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -110,7 +110,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/

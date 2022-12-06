@@ -10,7 +10,7 @@ from rest_framework.exceptions import (
     PermissionDenied,
 )
 from .models import Amenity, Room
-from categoriesConfig.models import Category
+from categories.models import Category
 from .serializers import AmenitySerializer, RoomDetailSerializer, RoomListSerializer
 
 
